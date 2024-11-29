@@ -62,4 +62,8 @@ helm install <chart-name> .
 ```
 - Here, `.` represents there is Chart.yaml in current folder
 
+![alt text](img/helm-install.png)
+
+
+
 
