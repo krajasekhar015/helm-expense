@@ -64,6 +64,16 @@ helm install <chart-name> .
 
 ![alt text](img/helm-install.png)
 
+- We can list helm using the command
+```
+helm list
+```
+![alt text](img/helm-list.png)
+
+- Suppose, if we change the version or else no. of replicas, then we can upgrade helm using the command
+```
+helm upgrade nginx .
+```
 
 
 
