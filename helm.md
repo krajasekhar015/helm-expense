@@ -114,6 +114,30 @@ helm upgrade --install aws-ebs-csi-driver \
     --namespace kube-system \
     aws-ebs-csi-driver/aws-ebs-csi-driver
 ```
+![alt text](img/helm-ebs-csi-driver.png)
+
+- We can see the drivers running status
+```
+kubectl get pods -n kube-system
+```
+![alt text](img/kube-system.png)
+
+- We can see driver using helm list command
+```
+helm list -n kube-system
+```
+![alt text](img/helm-list-driver.png)
+
+- To delete the driver
+```
+helm uninstall aws-ebs-csi-driver -n kube-system
+```
+![alt text](img/helm-driver-uninstall.png)
+
+
+**Helm-Expense**
+
+
 
 
 
