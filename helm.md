@@ -74,6 +74,13 @@ helm list
 ```
 helm upgrade nginx .
 ```
+![alt text](img/helm-upgrade.png)
+
+- To see the history of helm, use the command:
+```
+helm history nginx
+```
+
 
 
 
