@@ -56,4 +56,10 @@ deployment:
   replicas: 2
 ```
 
+* To install any helm chart, the command is:
+```
+helm install <chart-name> .
+```
+- Here, `.` represents there is Chart.yaml in current folder
+
 
