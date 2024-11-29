@@ -34,7 +34,7 @@ chmod 700 get_helm.sh
 helm version
 ```
 
-**Concept**
+**Concepts**
 **1. Chart.yaml**
 - The first important file we should write in helm charts is `Chart.yaml` (Here, C should be in capital)
 - We need to mention what ever information we required.
@@ -95,6 +95,28 @@ helm rollback nginx 2
 helm uninstall nginx
 ```
 ![alt text](img/helm-uninstall.png)
+
+**Installing ebs-csi-driver using Helm**
+- Go to the following location
+```
+https://github.com/kubernetes-sigs/aws-ebs-csi-driver/blob/master/docs/install.md
+```
+- First we need to Add the `aws-ebs-csi-driver` Helm repository.
+```
+helm repo add aws-ebs-csi-driver https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+```
+```
+helm repo update
+```
+- Install the latest release of the driver.
+```
+helm upgrade --install aws-ebs-csi-driver \
+    --namespace kube-system \
+    aws-ebs-csi-driver/aws-ebs-csi-driver
+```
+
+
+
 
 
 
