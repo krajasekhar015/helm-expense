@@ -80,6 +80,25 @@ helm upgrade nginx .
 ```
 helm history nginx
 ```
+![alt text](img/helm-history.png)
+
+- To get back to previous version, we will use rollback command:
+```
+helm rollback nginx 2
+```
+![alt text](img/helm-rollback.png)
+
+- Here, 2 is the revision (We can refer as upgrade version)
+
+- To uninstall helm charts
+```
+helm uninstall nginx
+```
+![alt text](img/helm-uninstall.png)
+
+
+
+
 
 
 
